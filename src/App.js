@@ -2,23 +2,29 @@
 
 function App() {
   return (
-    <div className="wrapper">
-      <header>
-        <svg />
-        <div>
-          <h3>React Sneakers</h3>
-          <p>Магазин лучших кроссовок</p>
+    <div className="wrapper clear">
+      <header className="d-flex justify-between align-center p-40">
+        <div className="d-flex align-center">
+          <img width={40} height={40} src="./img/logo.png" alt="logo"/>
+          <div>
+            <h3 className="text-uppercase">React Sneakers</h3>
+            <p>Магазин лучших кроссовок</p>
+          </div>
         </div>
-        <ul>
-          <li>
-            <svg />
+        <ul className="d-flex">
+          <li className="mr-30">
+            <img width={18} height={18} src="./img/cart.svg" />
             <span>1205 руб.</span>
           </li>
           <li>
-            <svg />
+            <img width={18} height={18} src="./img/user.svg" />
           </li>
         </ul>
       </header>
+      <div className="content p-40">
+        <h1>Все кроссовки</h1>
+        .....
+      </div>
     </div>
   );
 }
